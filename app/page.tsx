@@ -4,17 +4,20 @@ import Image from "next/image";
 import Projects from "./components/Projects";
 import Games from "./components/Games";
 import Skills from "./components/Skills";
-import Contacts from "./components/Contact";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6 bg-[#1e2621] overflow-auto">
       <div className="flex justify-around text-white text-[9rem] font-inter">
-        <div className="my-32">
-          <h1>Hi, </h1>
-          <h1>I'm Amy</h1>
-          <h1 className="py-1 text-4xl">Software Development Engineer</h1>
+        <div className="mt-32">
+          <h1 className=" leading-none">Hi, </h1>
+          <h1 className=" leading-none">I'm Amy</h1>
+          <h1 className="my-8 text-4xl">Software Development Engineer</h1>
+          <Navbar />
         </div>
+
         <div className="my-32">
           <Image
             src="/customers/evil-rabbit.png"
@@ -26,19 +29,21 @@ export default function Page() {
         </div>
       </div>
       <div className="flex flex-col my-32 text-2xl  text-white">
-        <div className="my-32">
+        <div id="projects" className="my-32">
           <Projects />
         </div>
-        <div className="my-32">
+        <div id="games" className="my-32">
           <Games />
         </div>
-        <div className="my-32">
+        <div id="skills" className="my-32">
           <Skills />
         </div>
-        <div className="my-32">
-          <Contacts />
+        <div id="contact" className="my-32">
+          <Contact />
         </div>
       </div>
     </main>
   );
 }
+
+//TODO make component disappear smoothly

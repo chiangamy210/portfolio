@@ -1,4 +1,4 @@
-export default function Contacts() {
+export default function Contact() {
   return (
     <main>
       <h1 className="flex p-12 justify-start text-white text-5xl font-inter">
