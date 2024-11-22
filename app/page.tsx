@@ -29,18 +29,18 @@ export default function Page() {
         </div>
       </div>
       <div className="flex flex-col my-32 text-2xl  text-white">
-        <div id="projects" className="my-32">
+        <section id="projects" className="my-32">
           <Projects />
-        </div>
-        <div id="games" className="my-32">
+        </section>
+        <section id="games" className="my-32">
           <Games />
-        </div>
-        <div id="skills" className="my-32">
+        </section>
+        <section id="skills" className="my-32">
           <Skills />
-        </div>
-        <div id="contact" className="my-32">
+        </section>
+        <section id="contact" className="my-32">
           <Contact />
-        </div>
+        </section>
       </div>
     </main>
   );

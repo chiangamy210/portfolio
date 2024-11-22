@@ -24,7 +24,23 @@ export default function Navbar() {
       } else {
         setIsFixed(false);
         setIsVisible(false);
+        setActiveHash(elem);
+        window.history.pushState(null, "", window.location.pathname);
         // console.log("<500", scrollY);
+      }
+
+      var elem = document.elementFromPoint(
+        window.innerWidth / 2,
+        window.innerHeight / 2
+      );
+
+      if (elem) {
+        const section = elem.closest("section");
+        console.log("section", section);
+        if (section && section.id) {
+          setActiveHash(`#${section.id}`);
+          window.history.pushState(null, "", `#${section.id}`);
+        }
       }
     };
 
@@ -73,24 +89,8 @@ export default function Navbar() {
             {item.label}
           </Link>
         ))}
-        {/* <Link
-          href="#projects"
-          onClick={(e) => handleClick(e, "projects")}
-          className={clsx({ "text-blue-400": activeHash === "#projects" })}
-        >
-          Projects
-        </Link>
-        <Link href="#games" onClick={(e) => handleClick(e, "games")}>
-          Games
-        </Link>
-        <Link href="#skills" onClick={(e) => handleClick(e, "skills")}>
-          Skills
-        </Link>
-        <Link href="#contact" onClick={(e) => handleClick(e, "contact")}>
-          Contact
-        </Link> */}
       </div>
     </main>
   );
 }
-//TODO useHash sethash to null when scroll to top
+//TODO  sethash to null when scroll to top
