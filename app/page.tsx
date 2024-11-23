@@ -1,4 +1,7 @@
+"use client";
+
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Projects from "./components/Projects";
@@ -8,15 +11,77 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 
 export default function Page() {
+  const [isFixed, setIsFixed] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [activeHash, setActiveHash] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("scrollY", scrollY);
+      if (window.scrollY > 500) {
+        setIsFixed(true);
+        setIsVisible(true);
+      } else {
+        setIsFixed(false);
+        setIsVisible(false);
+        setActiveHash(elem);
+        window.history.pushState(null, "", window.location.pathname);
+      }
+
+      var elem = document.elementFromPoint(
+        window.innerWidth / 2,
+        window.innerHeight / 2
+      );
+
+      if (elem) {
+        const section = elem.closest("section");
+        if (section && section.id) {
+          setActiveHash(`#${section.id}`);
+          window.history.pushState(null, "", `#${section.id}`);
+        }
+      }
+    };
+
+    const handleHashChange = () => {
+      setActiveHash(window.location.hash);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("hashchange", handleHashChange);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  const handleClick = (e, id: string) => {
+    e.preventDefault();
+
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+      setActiveHash(`#${id}`);
+      window.history.pushState(null, "", `#${id}`);
+    }
+  };
+
   return (
     <main className="flex min-h-screen flex-col p-6 bg-[#1e2621] overflow-auto">
+      <Navbar
+        handleClick={handleClick}
+        activeHash={activeHash}
+        isVisible={isVisible}
+        isFixed={isFixed}
+      />
       <div className="flex justify-around text-white text-[9rem] font-inter">
-        <div className="mt-32">
+        <header className="mt-32">
           <h1 className=" leading-none">Hi, </h1>
           <h1 className=" leading-none">I'm Amy</h1>
           <h1 className="my-8 text-4xl">Software Development Engineer</h1>
-          <Navbar />
-        </div>
+        </header>
 
         <div className="my-32">
           <Image
@@ -45,5 +110,3 @@ export default function Page() {
     </main>
   );
 }
-
-//TODO make component disappear smoothly

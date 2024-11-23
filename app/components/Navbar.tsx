@@ -1,13 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import clsx from "clsx";
 import Link from "next/link";
 
-export default function Navbar() {
-  const [isFixed, setIsFixed] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-  const [activeHash, setActiveHash] = useState("");
+export default function Navbar({
+  handleClick,
+  activeHash,
+  isVisible,
+  isFixed,
+}) {
   const navItems = [
     { id: "projects", label: "Projects" },
     { id: "games", label: "Games" },
@@ -15,65 +16,10 @@ export default function Navbar() {
     { id: "contact", label: "Contact" },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 500) {
-        setIsFixed(true);
-        setIsVisible(true);
-        // console.log(">500", scrollY);
-      } else {
-        setIsFixed(false);
-        setIsVisible(false);
-        setActiveHash(elem);
-        window.history.pushState(null, "", window.location.pathname);
-        // console.log("<500", scrollY);
-      }
-
-      var elem = document.elementFromPoint(
-        window.innerWidth / 2,
-        window.innerHeight / 2
-      );
-
-      if (elem) {
-        const section = elem.closest("section");
-        console.log("section", section);
-        if (section && section.id) {
-          setActiveHash(`#${section.id}`);
-          window.history.pushState(null, "", `#${section.id}`);
-        }
-      }
-    };
-
-    const handleHashChange = () => {
-      setActiveHash(window.location.hash);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("hashchange", handleHashChange);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("hashchange", handleHashChange);
-    };
-  }, []);
-
-  const handleClick = (e, id: string) => {
-    e.preventDefault();
-
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-      setActiveHash(`#${id}`);
-      window.history.pushState(null, "", `#${id}`);
-    }
-  };
-
   return (
-    <main>
+    <nav>
       <div
-        className={`flex my-7 gap-4 justify-start text-white text-2xl transition-all duration-1000 ease-in-out ${
+        className={`flex py-7 gap-4 justify-start w-full h-[100px] text-white text-2xl bg-[#1e2621] transition-all duration-1000 ease-in-out ${
           isFixed ? "fixed top-0" : "relative"
         }
           ${isVisible ? "opacity-100" : "opacity-0"}
@@ -90,7 +36,6 @@ export default function Navbar() {
           </Link>
         ))}
       </div>
-    </main>
+    </nav>
   );
 }
-//TODO  sethash to null when scroll to top
