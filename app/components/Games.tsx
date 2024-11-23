@@ -9,7 +9,6 @@ export default function Games() {
         <div>game2</div>
         <div>game3</div>
         <div>game4</div>
-        <div>game5</div>
       </div>
     </main>
   );
