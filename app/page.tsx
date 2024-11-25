@@ -110,3 +110,5 @@ export default function Page() {
     </main>
   );
 }
+
+//TODO form margin x , next skills

@@ -1,13 +1,12 @@
-import ContactForm from "../ui/contact-form";
+import ContactForm from "../ui/Contact-form";
 
 export default function Contact() {
   return (
-    <main>
-      <h1 className="flex p-12 justify-start text-white text-5xl font-inter">
+    <main className="p-12">
+      <h1 className="flex py-12 justify-start text-white text-5xl font-inter">
         Contact
       </h1>
-      <ContactForm/>
-      <form className="w-[600px]] h-[400px] flex justify-around"></form>
+      <ContactForm />
     </main>
   );
 }

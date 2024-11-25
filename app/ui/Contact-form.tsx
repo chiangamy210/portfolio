@@ -10,7 +10,7 @@ import Button from '../components/Button';
 export default function ContactForm() {
   return (
 
-    <form className='space-y-3'>
+    <form >
       <div className='flex flex-col rounded-lg bg-white px-12 pb-4 pt-8 text-black'>
         <div className='grid gap-6 md:grid-cols-2 mb-5'>
           <div className='flex flex-col '>
