@@ -19,7 +19,7 @@ export default function Navbar({
   return (
     <nav>
       <div
-        className={`flex py-7 gap-4 justify-start w-full h-[100px] text-white text-2xl bg-[#1e2621] transition-all duration-1000 ease-in-out ${
+        className={`flex py-7 gap-4 justify-start w-full h-[200px] text-white text-2xl bg-[#1e2621] transition-all duration-1000 ease-in-out ${
           isFixed ? "fixed top-0" : "relative"
         }
           ${isVisible ? "opacity-100" : "opacity-0"}
