@@ -111,4 +111,4 @@ export default function Page() {
   );
 }
 
-//TODO form margin x , next skills
+//TODO next component md center, add pics and link,
