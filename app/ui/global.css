@@ -17,6 +17,12 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.ccc:active {
-  color: red;
+.skill {
+  fill: white;
+  width: 100;
+  height:100;
+}
+.skill:hover {
+  fill: yellow;
+
 }
