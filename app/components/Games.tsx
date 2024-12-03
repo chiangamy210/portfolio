@@ -1,14 +1,32 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Games() {
   return (
-    <main>
-      <h1 className="flex p-12 justify-start text-white text-5xl font-inter">
+    <main className="flex flex-col p-12 justify-start text-white text-5xl font-inter ">
+      <h1 className="flex py-12 ">
         Games
       </h1>
-      <div className="w-[600px]] h-[400px] flex justify-around">
-        <div>game1</div>
-        <div>game2</div>
-        <div>game3</div>
-        <div>game4</div>
+      <div className="flex flex-wrap gap-x-8 gap-y-4">
+        <Link href="/games/tetris" target="_blank">
+          <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image>
+          <Image src="/tetris_portfolio/pics/playscene.png" alt="game scene" width={200}height={250}></Image>
+        </Link>
+       
+        <Link href="/games/tetris" >
+          <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image>
+          <Image src="/tetris_portfolio/pics/playscene.png" alt="game scene" width={200}height={250}></Image>
+        </Link>
+
+        <Link href="/games/tetris" >
+          <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image>
+          <Image src="/tetris_portfolio/pics/playscene.png" alt="game scene" width={200}height={250}></Image>
+        </Link>
+
+        <Link href="/games/tetris" >
+          <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image>
+          <Image src="/tetris_portfolio/pics/playscene.png" alt="game scene" width={200}height={250}></Image>
+        </Link>
       </div>
     </main>
   );

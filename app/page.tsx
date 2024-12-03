@@ -17,7 +17,7 @@ export default function Page() {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("scrollY", scrollY);
+      // console.log("scrollY", scrollY);
       if (window.scrollY > 500) {
         setIsFixed(true);
         setIsVisible(true);
