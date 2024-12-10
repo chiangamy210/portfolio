@@ -10,17 +10,17 @@ export default function Games() {
       <div className="flex flex-wrap gap-x-8 gap-y-4">
         <Link href="/games/tetris" target="_blank">
           <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image>
-          <Image src="/tetris_portfolio/pics/playscene.png" alt="game scene" width={200}height={250}></Image>
+          <Image src="/tetris_portfolio/pics/playscene.png" alt="tetris game scene" width={200}height={250}></Image>
         </Link>
        
-        <Link href="/games/tetris" >
-          <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image>
-          <Image src="/tetris_portfolio/pics/playscene.png" alt="game scene" width={200}height={250}></Image>
+        <Link href="/games/snake" target="_blank" >
+          {/* <Image src="/snake/snakePic.png" alt="block fun" width={200} height={100}></Image> */}
+          <Image src="/snake/snakePic.png" alt="snake game scene" width={200}height={350}></Image>
         </Link>
 
-        <Link href="/games/tetris" >
-          <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image>
-          <Image src="/tetris_portfolio/pics/playscene.png" alt="game scene" width={200}height={250}></Image>
+        <Link href="/games/family" target="_blank" >
+          {/* <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image> */}
+          <Image src="/family/familyPic.png" alt="family game scene" width={200}height={350}></Image>
         </Link>
 
         <Link href="/games/tetris" >

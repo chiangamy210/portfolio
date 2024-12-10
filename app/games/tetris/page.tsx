@@ -11,9 +11,8 @@ export default function Page() {
             src="/tetris_portfolio/index.html"
           ></iframe>
         </div>
-        <h2 className="text-center text-2xl mb-10">This is my favorite game and also my first game. Have fun!
-
-        </h2>
+        <h2 className="text-center text-2xl mb-10">This is a Tetris Game. It is my favorite game and also my first game.</h2>
+        <h2 className="text-center text-2xl mb-10">Have fun!</h2>
       </main>
     );
   }
