@@ -27,6 +27,10 @@ export default function Games() {
           {/* <Image src="/verb/pics/title.png" alt="block fun" width={200} height={100}></Image> */}
           <Image src="/verb/verbPic.png" alt="game scene" width={200}height={350}></Image>
         </Link>
+        <Link href="/games/number" target="_blank" >
+          {/* <Image src="/verb/pics/title.png" alt="block fun" width={200} height={100}></Image> */}
+          <Image src="/number/numberPic.png" alt="game scene" width={200}height={350}></Image>
+        </Link>
       </div>
     </main>
   );
