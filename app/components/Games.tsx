@@ -23,9 +23,9 @@ export default function Games() {
           <Image src="/family/familyPic.png" alt="family game scene" width={200}height={350}></Image>
         </Link>
 
-        <Link href="/games/tetris" >
-          <Image src="/tetris_portfolio/pics/title.png" alt="block fun" width={200} height={100}></Image>
-          <Image src="/tetris_portfolio/pics/playscene.png" alt="game scene" width={200}height={250}></Image>
+        <Link href="/games/verb" target="_blank" >
+          {/* <Image src="/verb/pics/title.png" alt="block fun" width={200} height={100}></Image> */}
+          <Image src="/verb/verbPic.png" alt="game scene" width={200}height={350}></Image>
         </Link>
       </div>
     </main>
