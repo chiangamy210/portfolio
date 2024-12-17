@@ -2,8 +2,8 @@ import Carousel from "./Carousel";
 
 export default function Projects() {
   const carouelProject=[
-    { id: 1, src: "/projects/staybooking/staybooking.gif", alt: "staybooking gif demo", link: "/games/tetris" },
-    { id: 2, src: "/projects/swapspot/swapspot.gif", alt: "swap spot gif demo", link: "/games/snake" },
+    { id: 1, src: "/projects/staybooking/staybooking.gif", alt: "staybooking gif demo", link: "https://youtu.be/PgOib85Mgg4" },
+    { id: 2, src: "/projects/swapspot/swapspot.gif", alt: "swap spot gif demo", link: "https://youtu.be/a9vSveHpN0o" },
     { id: 3, src: "/family/familyPic.png", alt: "Family game scene", link: "/games/family" },
     { id: 4, src: "/verb/verbPic.png", alt: "Verb game scene", link: "/games/verb" },
   ]

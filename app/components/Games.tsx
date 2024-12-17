@@ -4,11 +4,11 @@ import Carousel from "./Carousel";
 
 export default function Games() {
   const carouselImages = [
-    { id: 1, src: "/tetris/tetrisPic.png", alt: "Block fun", link: "/games/tetris" },
-    { id: 2, src: "/snake/snakePic.png", alt: "Snake game scene", link: "/games/snake" },
-    { id: 3, src: "/family/familyPic.png", alt: "Family game scene", link: "/games/family" },
-    { id: 4, src: "/verb/verbPic.png", alt: "Verb game scene", link: "/games/verb" },
-    { id: 5, src: "/number/numberPic.png", alt: "Number game scene", link: "/games/number" },
+    { id: 1, src: "/games/tetris/tetrisPic.png", alt: "Block fun", link: "/games/tetris" },
+    { id: 2, src: "/games/snake/snakePic.png", alt: "Snake game scene", link: "/games/snake" },
+    { id: 3, src: "/games/family/familyPic.png", alt: "Family game scene", link: "/games/family" },
+    { id: 4, src: "/games/verb/verbPic.png", alt: "Verb game scene", link: "/games/verb" },
+    { id: 5, src: "/games/number/numberPic.png", alt: "Number game scene", link: "/games/number" },
   ]
   
   return (
