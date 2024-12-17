@@ -4,8 +4,8 @@ export default function Projects() {
   const carouelProject=[
     { id: 1, src: "/projects/staybooking/staybooking.gif", alt: "staybooking gif demo", link: "https://youtu.be/PgOib85Mgg4" },
     { id: 2, src: "/projects/swapspot/swapspot.gif", alt: "swap spot gif demo", link: "https://youtu.be/a9vSveHpN0o" },
-    { id: 3, src: "/family/familyPic.png", alt: "Family game scene", link: "/games/family" },
-    { id: 4, src: "/verb/verbPic.png", alt: "Verb game scene", link: "/games/verb" },
+    { id: 3, src: "/games/family/familyPic.png", alt: "Family game scene", link: "/games/family" },
+    { id: 4, src: "/games/verb/verbPic.png", alt: "Verb game scene", link: "/games/verb" },
   ]
   return (
 
@@ -21,3 +21,10 @@ export default function Projects() {
      
   );
 }
+
+//change ui to more stylish
+//fix ipad problem
+//flex-wrap smoothier on skills
+//images width warning
+//deploy insight reader
+//add more project
