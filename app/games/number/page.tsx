@@ -7,7 +7,7 @@ export default function Page() {
           <iframe
             width="1500"
             height="700"
-            src="/number/index.html"
+            src="/games/number/index.html"
           ></iframe>
         </div>
         <h2 className="text-center text-2xl mb-10">Help sell fruit to customers by dragging a box to each customer that matches the number they want.</h2>

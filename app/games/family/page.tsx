@@ -7,7 +7,7 @@ export default function Page() {
           <iframe
             width="1500"
             height="700"
-            src="/family/index.html"
+            src="/games/family/index.html"
           ></iframe>
         </div>
         <h2 className="text-center text-2xl mb-10">In this game, you are a Corgi who help deliver mail to each family member.</h2>

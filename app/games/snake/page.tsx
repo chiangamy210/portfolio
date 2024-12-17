@@ -7,7 +7,7 @@ export default function Page() {
           <iframe
             width="1500"
             height="700"
-            src="/snake/index.html"
+            src="/games/snake/index.html"
           ></iframe>
         </div>
         <h2 className="text-center text-2xl mb-10">This is a snake Game that I used to play in an old cell phone. I combine the snake game idea with Mandarin color sound and charactor matching.</h2>

@@ -1,11 +1,9 @@
-// import { lusitana } from '@/app/ui/fonts';
 import {
   AtSymbolIcon,
   KeyIcon,
   ExclamationCircleIcon,
 } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
-import Button from '../components/Button';
 
 export default function ContactForm() {
   return (
@@ -24,7 +22,7 @@ export default function ContactForm() {
         </div>
         <div className='flex flex-col mb-5'>
           <label htmlFor="message" className=' pb-3 '>Message</label>
-          <textarea id='message' rows='4' type='text' className='rounded-lg w-full h-[200px]'  placeholder="Leave me a message here..." required></textarea>
+          <textarea id='message' rows={4}  className='rounded-lg w-full h-[200px]'  placeholder="Leave me a message here..." required></textarea>
         </div>
         <button type='submit' className="mb-5 w-[150px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
       </div>

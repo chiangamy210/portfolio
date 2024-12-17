@@ -3,12 +3,19 @@
 import clsx from "clsx";
 import Link from "next/link";
 
+interface NavbarProps {
+  handleClick: (event: React.MouseEvent<HTMLAnchorElement>, id: string) => void;
+  activeHash: string;
+  isVisible: boolean;
+  isFixed: boolean;
+}
+
 export default function Navbar({
   handleClick,
   activeHash,
   isVisible,
   isFixed,
-}) {
+}:NavbarProps) {
   const navItems = [
     { id: "projects", label: "Projects" },
     { id: "games", label: "Games" },

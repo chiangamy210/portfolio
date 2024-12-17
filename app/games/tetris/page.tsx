@@ -8,7 +8,7 @@ export default function Page() {
           <iframe
             width="1500"
             height="700"
-            src="/tetris/index.html"
+            src="/games/tetris/index.html"
           ></iframe>
         </div>
         <h2 className="text-center text-2xl mb-10">This is a Tetris Game. It is my favorite game and also my first game.</h2>

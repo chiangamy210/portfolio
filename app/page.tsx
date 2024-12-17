@@ -2,6 +2,7 @@
 
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Projects from "./components/Projects";
@@ -17,14 +18,13 @@ export default function Page() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // console.log("scrollY", scrollY);
       if (window.scrollY > 500) {
         setIsFixed(true);
         setIsVisible(true);
       } else {
         setIsFixed(false);
         setIsVisible(false);
-        setActiveHash(elem);
+        setActiveHash('');
         window.history.pushState(null, "", window.location.pathname);
       }
 
@@ -54,7 +54,7 @@ export default function Page() {
     };
   }, []);
 
-  const handleClick = (e, id: string) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
 
     const section = document.getElementById(id);
@@ -111,4 +111,3 @@ export default function Page() {
   );
 }
 
-//TODO next component md center, add pics and link,
