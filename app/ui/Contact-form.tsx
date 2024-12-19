@@ -9,7 +9,7 @@ export default function ContactForm() {
   return (
 
     <form >
-      <div className='flex flex-col rounded-lg bg-white px-12 pb-4 pt-8 text-black'>
+      <div className='flex flex-col rounded-lg bg-white/40 px-12 pb-4 pt-8 '>
         <div className='grid gap-6 md:grid-cols-2 mb-5'>
           <div className='flex flex-col '>
             <label  htmlFor="name" className=' pb-3'>Name</label>
@@ -24,7 +24,7 @@ export default function ContactForm() {
           <label htmlFor="message" className=' pb-3 '>Message</label>
           <textarea id='message' rows={4}  className='rounded-lg w-full h-[200px]'  placeholder="Leave me a message here..." required></textarea>
         </div>
-        <button type='submit' className="mb-5 w-[150px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+        <button type='submit' className="mb-5 w-[150px] bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Submit</button>
       </div>
      
     </form>

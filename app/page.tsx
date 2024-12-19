@@ -11,6 +11,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 
+
 export default function Page() {
   const [isFixed, setIsFixed] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -67,16 +68,17 @@ export default function Page() {
       window.history.pushState(null, "", `#${id}`);
     }
   };
-
+  // bg-[#1e2621]
   return (
-    <main className="flex min-h-screen flex-col p-6 bg-[#1e2621] overflow-auto">
+    <main className="flex min-h-screen flex-col p-6 text-gray-900 overflow-auto" style={{background:`url(/bg.png)` , backgroundSize:'cover'}}>
+  
       <Navbar
         handleClick={handleClick}
         activeHash={activeHash}
         isVisible={isVisible}
         isFixed={isFixed}
       />
-      <div className="flex justify-around text-white text-[9rem] font-inter">
+      <div className="flex justify-around  text-[9rem] font-inter">
         <header className="mt-32">
           <h1 className=" leading-none">Hi, </h1>
           <h1 className=" leading-none">I'm Amy</h1>
@@ -93,7 +95,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="flex flex-col my-32 text-2xl  text-white">
+      <div className="flex flex-col my-32 text-2xl  text-gray-600">
         <section id="projects" className="my-32">
           <Projects />
         </section>

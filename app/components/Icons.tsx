@@ -35,7 +35,9 @@ const TailwindIcon = ({ className }: IconsProps) => {
 
 const NextIcon = ({ className }: IconsProps) => {
   return (
-    <svg fill="currentColor" viewBox="0 0 15 15" height="1em" width="1em" 
+    <svg 
+    fill="currentColor" viewBox="0 0 15 15" 
+    height="1em" width="1em" 
     className={className}>
       <path
         fillRule="evenodd"

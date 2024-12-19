@@ -11,6 +11,12 @@ const config: Config = {
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
+      animation:{
+        fadeIn:  "fadeIn 0.5s ease-in-out",
+      },
+   
+       
+   
       colors: {
         blue: {
           400: '#2589FE',
@@ -25,6 +31,10 @@ const config: Config = {
           transform: 'translateX(100%)',
         },
       },
+      fadeIn:{
+        '0%': { opacity: 0 },
+        '100%': { opacity: 1 },
+      }
     },
   },
   plugins: [require('@tailwindcss/forms')],

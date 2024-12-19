@@ -1,16 +1,14 @@
 import Image from "next/image";
 import { useState } from "react";
-import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Link from "next/link";
 
-/**
- * Using external library react-easy-swipe for swipe gestures on mobile devices (optional)
- *
- */
-export default function Carousel({ images,className }) {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
+export default function Carousel({
+  images,
+  currentSlide,
+  setCurrentSlide,
+  className,
+}) {
   const handleNextSlide = () => {
     let newSlide = currentSlide === images.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(newSlide);
@@ -22,42 +20,33 @@ export default function Carousel({ images,className }) {
   };
 
   return (
-    <div className="flex flex-col" >
-      <div  className={className}>
-      <AiOutlineLeft
-        onClick={handlePrevSlide}
-        className=" left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
-      <div className="w-full h-[50vh] flex  relative m-auto mx-4">
-        <Swipe
-          onSwipeLeft={handleNextSlide}
-          onSwipeRight={handlePrevSlide}
-          className=" z-10 w-full h-full"
-        >
+    <div className="flex flex-col">
+      <div className={className}>
+        <AiOutlineLeft
+          onClick={handlePrevSlide}
+          className=" left-0 m-auto  inset-y-1/2 cursor-pointer text-gray-400 z-20"
+        />
+        <div className="relative  w-full overflow-hidden  rounded-2xl">
           {images.map((image, index) => {
             if (index === currentSlide) {
               return (
-                <Link href={image.link} target="_blank"  key={image.id}>
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  layout="fill"
-                  objectFit="contain"
-                  className="animate-fadeIn"
-                />
+                <Link href={image.link} target="_blank" key={image.id}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="animate-fadeIn "
+                  />
                 </Link>
-                
               );
             }
           })}
-        </Swipe>
+        </div>
+        <AiOutlineRight
+          onClick={handleNextSlide}
+          className=" right-0 m-auto  inset-y-1/2 cursor-pointer text-gray-400 z-20"
+        />
       </div>
-      <AiOutlineRight
-        onClick={handleNextSlide}
-        className=" right-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
-      </div>
-      <div className="flex justify-center p-2">
+      {/* <div className="flex justify-center w-full ">
         {images.map((_, index) => {
           return (
             <div
@@ -73,8 +62,7 @@ export default function Carousel({ images,className }) {
             />
           );
         })}
-      
-      </div>
+      </div> */}
     </div>
   );
 }
