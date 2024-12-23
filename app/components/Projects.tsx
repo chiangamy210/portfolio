@@ -71,7 +71,7 @@ export default function Projects() {
   );
 }
 
-//organize image size
+//organize project image size
 //change ui to more stylish
 //fix ipad problem
 //flex-wrap smoothier on skills
