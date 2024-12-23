@@ -78,7 +78,7 @@ export default function Page() {
         isVisible={isVisible}
         isFixed={isFixed}
       />
-      <div className="flex justify-around  text-[9rem] font-inter">
+      <div className="flex justify-around  text-[9rem] ">
         <header className="mt-32">
           <h1 className=" leading-none">Hi, </h1>
           <h1 className=" leading-none">I'm Amy</h1>
@@ -95,7 +95,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="flex flex-col my-32 text-2xl  text-gray-600">
+      <div className="flex flex-col my-32  text-gray-600">
         <section id="projects" className="my-32">
           <Projects />
         </section>

@@ -50,21 +50,19 @@ export default function Projects() {
     { id: 4, title: "title", description: " Designed ." },
   ];
   return (
-    <main className="flex flex-wrap p-12 justify-between text-5xl font-inter ">
-      <div className="flex flex-col items-center justify-center gap-y-2 w-full lg:w-[45vw]">
+    <main className="flex flex-wrap flex-col justify-center items-center  text-5xl ">
+      <div className="flex flex-col items-center justify-center gap-y-2 md:px-[10%] xl:px-[20%] ">
         <div key={projectsDescription[currentSlide].id}>
           <h1>{projectsDescription[currentSlide].title}</h1>
           <p className="text-2xl text-gray-500">
             {projectsDescription[currentSlide].description}
           </p>
         </div>
-      </div>
-      <div className="flex flex-wrap  my-14 20 gap-x-12 gap-y-2 w-[500px] md:w-[800px] ">
         <Carousel
           images={carouselProject}
           currentSlide={currentSlide}
           setCurrentSlide={setCurrentSlide}
-          className="flex justify-between items-center w-[380px] md:w-[800px] mb-2 "
+          className="flex justify-between items-center   mb-2 "
         />
       </div>
     </main>
