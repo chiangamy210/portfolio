@@ -15,7 +15,7 @@ export default function Navbar({
   activeHash,
   isVisible,
   isFixed,
-}:NavbarProps) {
+}: NavbarProps) {
   const navItems = [
     { id: "projects", label: "Projects" },
     { id: "games", label: "Games" },
@@ -26,7 +26,7 @@ export default function Navbar({
   return (
     <nav>
       <div
-        className={`flex py-7 gap-4 justify-start w-full h-[100px]  text-2xl  transition-all duration-1000 ease-in-out ${
+        className={`flex z-30 my-12 px-7 py-7 gap-4 justify-between items-center w-[400px] h-[5vh] bg-white rounded-full text-2xl  transition-all duration-500 ease-in-out ${
           isFixed ? "fixed top-0" : "relative"
         }
           ${isVisible ? "opacity-100" : "opacity-0"}
@@ -37,7 +37,7 @@ export default function Navbar({
             key={item.id}
             href={`#${item.id}`}
             onClick={(e) => handleClick(e, item.id)}
-            className={clsx({ "text-blue-400": activeHash === `#${item.id}` })}
+            className={clsx({ "text-gray-400": activeHash === `#${item.id}` })}
           >
             {item.label}
           </Link>

@@ -59,7 +59,7 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap  gap-y-10 gap-x-12 gap-y-2 w-[500px] md:w-[800px] ">
+      <div className="flex flex-wrap  my-14 20 gap-x-12 gap-y-2 w-[500px] md:w-[800px] ">
         <Carousel
           images={carouselProject}
           currentSlide={currentSlide}
@@ -78,4 +78,3 @@ export default function Projects() {
 //images width warning
 //deploy insight reader
 //carousel boarder radius for project
-//add banner bg

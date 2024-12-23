@@ -11,7 +11,6 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 
-
 export default function Page() {
   const [isFixed, setIsFixed] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -25,7 +24,7 @@ export default function Page() {
       } else {
         setIsFixed(false);
         setIsVisible(false);
-        setActiveHash('');
+        setActiveHash("");
         window.history.pushState(null, "", window.location.pathname);
       }
 
@@ -68,10 +67,11 @@ export default function Page() {
       window.history.pushState(null, "", `#${id}`);
     }
   };
-  // bg-[#1e2621]
   return (
-    <main className="flex min-h-screen flex-col p-6 text-gray-900 overflow-auto" style={{background:`url(/bg.png)` , backgroundSize:'cover'}}>
-  
+    <main
+      className="flex min-h-screen flex-col p-12 text-gray-900 overflow-auto"
+      style={{ background: `url(/bg.png)`, backgroundSize: "cover" }}
+    >
       <Navbar
         handleClick={handleClick}
         activeHash={activeHash}
@@ -112,4 +112,3 @@ export default function Page() {
     </main>
   );
 }
-

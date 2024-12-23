@@ -1,42 +1,40 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       gridTemplateColumns: {
-        '13': 'repeat(13, minmax(0, 1fr))',
+        "13": "repeat(13, minmax(0, 1fr))",
       },
-      animation:{
-        fadeIn:  "fadeIn 0.5s ease-in-out",
+      animation: {
+        fadeIn: "fadeIn 0.5s ease-in-out",
       },
-   
-       
-   
+
       colors: {
         blue: {
-          400: '#2589FE',
-          500: '#0070F3',
-          600: '#2F6FEB',
+          400: "#2589FE",
+          500: "#0070F3",
+          600: "#2F6FEB",
         },
       },
     },
     keyframes: {
       shimmer: {
-        '100%': {
-          transform: 'translateX(100%)',
+        "100%": {
+          transform: "translateX(100%)",
         },
       },
-      fadeIn:{
-        '0%': { opacity: 0 },
-        '100%': { opacity: 1 },
-      }
+      fadeIn: {
+        "0%": { opacity: "0" },
+        "100%": { opacity: "1" },
+      },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require("@tailwindcss/forms")],
 };
 export default config;
