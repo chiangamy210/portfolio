@@ -43,7 +43,7 @@ export default function Games() {
 
   return (
     <main className="flex flex-wrap justify-between text-5xl  ">
-      <div className="flex  flex-col items-center justify-center gap-y-2 w-full lg:w-[45vw] ">
+      <div className="flex  flex-col items-center justify-center mb-12 gap-y-2 w-full lg:w-[45vw] ">
         <h1>From Game to Code: My Unity Adventures</h1>
         <p className="text-2xl text-gray-500">
           I’ve also dived into self-learning Unity and C# to create some tiny

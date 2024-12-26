@@ -99,7 +99,7 @@ export default function Page() {
         <section id="projects" className="my-32">
           <Projects />
         </section>
-        <section id="games" className="my-32">
+        <section id="games" className="my-64">
           <Games />
         </section>
         <section id="skills" className="my-32">

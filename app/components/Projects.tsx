@@ -9,15 +9,15 @@ export default function Projects() {
   const carouselProject = [
     {
       id: 1,
-      src: "/projects/staybooking/staybooking.gif",
-      alt: "staybooking gif demo",
-      link: "https://youtu.be/PgOib85Mgg4",
-    },
-    {
-      id: 2,
       src: "/projects/swapspot/swapspot.gif",
       alt: "swap spot gif demo",
       link: "https://youtu.be/a9vSveHpN0o",
+    },
+    {
+      id: 2,
+      src: "/projects/staybooking/staybooking.gif",
+      alt: "staybooking gif demo",
+      link: "https://youtu.be/PgOib85Mgg4",
     },
     {
       id: 3,
@@ -52,7 +52,7 @@ export default function Projects() {
   return (
     <main className="flex flex-wrap flex-col justify-center items-center  text-5xl ">
       <div className="flex flex-col items-center justify-center gap-y-2 md:px-[10%] xl:px-[20%] ">
-        <div key={projectsDescription[currentSlide].id}>
+        <div key={projectsDescription[currentSlide].id} className="mb-12">
           <h1>{projectsDescription[currentSlide].title}</h1>
           <p className="text-2xl text-gray-500">
             {projectsDescription[currentSlide].description}
@@ -62,7 +62,7 @@ export default function Projects() {
           images={carouselProject}
           currentSlide={currentSlide}
           setCurrentSlide={setCurrentSlide}
-          className="flex justify-between items-center   mb-2 "
+          className="flex justify-between items-center mb-2 "
         />
       </div>
     </main>
