@@ -19,8 +19,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .skill {
   fill: gray;
-  width: 70;
-  height: 70;
+  width: 100;
+  height: 100;
 }
 .skill:hover {
   fill: #374151;

@@ -87,7 +87,7 @@ export default function Page() {
 
         <div className="my-32">
           <Image
-            src="/customers/evil-rabbit.png"
+            src="/img/evil-rabbit.png"
             alt="Amy portait"
             width={500}
             height={300}

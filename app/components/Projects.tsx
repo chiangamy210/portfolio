@@ -9,8 +9,8 @@ export default function Projects() {
   const carouselProject = [
     {
       id: 1,
-      src: "/projects/swapspot/swapspot.gif",
-      alt: "Insight Reader demo",
+      src: "/projects/insightReader/insightReader.gif",
+      alt: "Insight Reader gif demo",
       link: "https://insight-reader-client.vercel.app/",
     },
 
@@ -25,12 +25,6 @@ export default function Projects() {
       src: "/projects/staybooking/staybooking.gif",
       alt: "staybooking gif demo",
       link: "https://youtu.be/PgOib85Mgg4",
-    },
-    {
-      id: 4,
-      src: "/games/verb/verbPic.png",
-      alt: "Verb game scene",
-      link: "/games/verb",
     },
   ];
 
@@ -47,7 +41,7 @@ export default function Projects() {
       id: 2,
       title: "SWAP SPOT: Second-Hand Trading",
       description:
-        "Collaborated with a team to develop a second-hand trading web app,React and Ant Design.",
+        "Collaborated with a team to develop a second-hand trading web app.",
       tools: "React, Java, AntDesign",
       instruction: "click to watch full demo",
     },
@@ -56,12 +50,11 @@ export default function Projects() {
       title: "STAYBOOKING: A Seamless Stay Rental Experience",
       tools: "React, JAVA, AntDesign",
       instruction: "click to watch full demo",
-
       description:
         "Designed and developed a dynamic one-page online stay rental application, leveraging React for frontend and Spring Boot for backend services. Integrated PostgreSQL for reservation management, Google Cloud Storage for media, and PostGIS for geo-based searches, ensuring scalability and reliability through deployment on Google Cloud Run.",
     },
-    { id: 4, title: "title", description: " Designed ." },
   ];
+
   return (
     <main className="flex flex-wrap flex-col justify-center items-center">
       <div className="flex flex-col items-center justify-center gap-y-2 md:px-[10%] xl:px-[20%] ">
@@ -92,6 +85,7 @@ export default function Projects() {
 
 //change ui to more stylish
 //fix ipad problem
-//carousel boarder radius for project
-//skill items-center, gy smaller
-//project image size
+//draw pics
+//choose color
+//add contact links
+//carousal problem
