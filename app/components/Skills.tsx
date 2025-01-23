@@ -40,15 +40,13 @@ export default function Skills() {
     },
   ];
   return (
-    <main className="flex flex-wrap  justify-between  text-5xl ">
+    <main className="flex flex-wrap  justify-between ">
       <div className="flex flex-wrap  items-center justify-center mb-12 gap-y-2 w-full md:w-[40vw] md:order-2">
         <h1>Skills That Drive My Passion for Development</h1>
-        <p className="text-2xl text-gray-500">
-          I’ve honed a diverse set of skills that empower me to create seamless
-          and innovative web applications, explore backend services, and design
-          visually engaging interfaces. From crafting responsive frontends to
-          building robust server-side applications, these tools fuel my love for
-          coding.
+        <p className="text-xl text-gray-500">
+          I specialize in creating responsive frontends, seamless web
+          applications, and robust backend services, leveraging diverse skills
+          and tools that fuel my passion for coding.
         </p>
       </div>
       <div className="flex flex-wrap  gap-y-10 gap-x-10 w-full  md:w-[45vw] md:order-1">

@@ -95,7 +95,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="flex flex-col my-32  text-gray-600">
+      <div className="flex flex-col my-32  text-gray-700 text-4xl">
         <section id="projects" className="my-32">
           <Projects />
         </section>
