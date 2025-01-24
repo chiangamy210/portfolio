@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Games from "./components/Games";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import MeInfo from "./components/MeInfo";
 import Navbar from "./components/Navbar";
 
 export default function Page() {
@@ -78,14 +79,13 @@ export default function Page() {
         isVisible={isVisible}
         isFixed={isFixed}
       />
-      <div className="flex justify-around  text-[9rem] ">
-        <header className="mt-32">
-          <h1 className=" leading-none">Hi, </h1>
-          <h1 className=" leading-none">I'm Amy</h1>
-          <h1 className="my-8 text-4xl">Software Development Engineer</h1>
+      <div className="flex justify-around  text-8xl ">
+        <header className="flex flex-col justify-center">
+          <h1>I'm Amy</h1>
+          <h1 className="my-8 text-3xl">Software Development Engineer</h1>
+          <MeInfo />
         </header>
-
-        <div className="my-32">
+        <div className="my-32 ml-6">
           <Image
             src="/img/evil-rabbit.png"
             alt="Amy portait"

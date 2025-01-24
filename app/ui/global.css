@@ -25,3 +25,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .skill:hover {
   fill: #374151;
 }
+
+.contactInfo {
+  fill: gray;
+  width: 50;
+  height: 50;
+}
+.contactInfo:hover {
+  fill: #374151;
+}
