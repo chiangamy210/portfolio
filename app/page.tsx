@@ -80,12 +80,14 @@ export default function Page() {
         isFixed={isFixed}
       />
       <div className="flex justify-around  text-8xl ">
-        <header className="flex flex-col justify-center">
+        <header id="about" className="flex flex-col justify-center items-start">
           <h1>I'm Amy</h1>
-          <h1 className="my-8 text-3xl">Software Development Engineer</h1>
+          <section className="my-8 text-3xl">
+            Software Development Engineer
+          </section>
           <MeInfo />
         </header>
-        <div className="my-32 ml-6">
+        <div className="my-8 ml-6">
           <Image
             src="/img/evil-rabbit.png"
             alt="Amy portait"

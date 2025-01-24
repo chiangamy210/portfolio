@@ -33,25 +33,26 @@ export default function Projects() {
       id: 1,
       title: "Insight Reader",
       tools: "React, NodeJS, Mui, Gemini, Vercel, Cloudinary",
-      description: "An AI chat platform combined with pdf reader",
+      description:
+        "It's an AI chat platform combined with the function of pdf reading. Deployed on Vercel and the pdf files stored on Cloudinary makes users experience the AI helper on different devices anytime.",
       instruction: "click to try",
     },
 
     {
       id: 2,
-      title: "SWAP SPOT: Second-Hand Trading",
+      title: "SWAP SPOT",
       description:
-        "Collaborated with a team to develop a second-hand trading web app.",
+        " It is a Second-Hand Trading website project. Collaborated with a team using Spring Boot environment and JWT authentication.",
       tools: "React, Java, AntDesign",
       instruction: "click to watch full demo",
     },
     {
       id: 3,
-      title: "STAYBOOKING: A Seamless Stay Rental Experience",
+      title: "STAYBOOKING",
       tools: "React, JAVA, AntDesign",
       instruction: "click to watch full demo",
       description:
-        "Designed and developed a dynamic one-page online stay rental application, leveraging React for frontend and Spring Boot for backend services. Integrated PostgreSQL for reservation management, Google Cloud Storage for media, and PostGIS for geo-based searches, ensuring scalability and reliability through deployment on Google Cloud Run.",
+        "It's a Seamless Stay Rental web project. Designed and developed a dynamic one-page online stay rental application, leveraging React for frontend and Spring Boot for backend services. Integrated PostgreSQL for reservation management, Google Cloud Storage for media, and PostGIS for geo-based searches, ensuring scalability and reliability through deployment on Google Cloud Run.",
     },
   ];
 
@@ -62,7 +63,7 @@ export default function Projects() {
           <h1 className="flex  justify-center">
             {projectsDescription[currentSlide].title}
           </h1>
-          <p className="flex justify-center text-xl text-gray-500 my-2">
+          <p className="flex justify-center text-xl text-gray-500 my-2 mx-16">
             {projectsDescription[currentSlide].description}
           </p>
           <p className="flex justify-center text-xl text-gray-500 font-semibold">
@@ -87,5 +88,5 @@ export default function Projects() {
 //fix ipad problem
 //draw pics
 //choose color
-//add contact links
 //carousal problem
+//submit function

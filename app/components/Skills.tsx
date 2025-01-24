@@ -41,8 +41,8 @@ export default function Skills() {
   ];
   return (
     <main className="flex flex-wrap  justify-between ">
-      <div className="flex flex-wrap  items-center justify-center mb-12 gap-y-2 w-full md:w-[40vw] md:order-2">
-        <h1>Skills That Drive My Passion for Development</h1>
+      <div className="flex flex-col flex-wrap  mb-2 items-center justify-center w-full md:w-[40vw] md:order-2">
+        <h1>Skills</h1>
         <p className="text-xl text-gray-500">
           I specialize in creating responsive frontends, seamless web
           applications, and robust backend services, leveraging diverse skills

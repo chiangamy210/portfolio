@@ -9,7 +9,7 @@ export default function MeInfo() {
     {
       title: "download cv",
       icon: HiDocumentDownload,
-      href: "https://github.com/chiangamy210",
+      href: "https://drive.google.com/file/d/1jm6PQNnLwqKnc87tH4oY9MMRKI6mBjw1/view?usp=drive_link",
     },
     {
       title: "github",
@@ -19,12 +19,12 @@ export default function MeInfo() {
     {
       title: "email",
       icon: MdOutlineMailOutline,
-      href: "chiangyenhui@gmail.com",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=chiangyenhui@gmail.com",
     },
     {
       title: "linkedin",
       icon: FaLinkedin,
-      href: "https://github.com/chiangamy210",
+      href: "https://www.linkedin.com/in/yen-hui-chiang/",
     },
   ];
   return (
