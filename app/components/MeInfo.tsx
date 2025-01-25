@@ -17,7 +17,7 @@ export default function MeInfo() {
       href: "https://github.com/chiangamy210",
     },
     {
-      title: "email",
+      title: "email to me : chiangyenhui@gmail.com",
       icon: MdOutlineMailOutline,
       href: "https://mail.google.com/mail/?view=cm&fs=1&to=chiangyenhui@gmail.com",
     },

@@ -1,42 +1,37 @@
-import {
-  AtSymbolIcon,
-  KeyIcon,
-  ExclamationCircleIcon,
-} from "@heroicons/react/24/outline";
-import { ArrowRightIcon } from "@heroicons/react/20/solid";
+"use client";
 
 export default function ContactForm() {
+  function handleSend() {
+    console.log("123");
+  }
+
   return (
-    <form>
-      <div className="flex flex-col rounded-lg bg-white/40 px-12 pb-4 pt-8 text-2xl">
-        <div className="grid gap-6 md:grid-cols-2 mb-5">
+    <form onSubmit={handleSend}>
+      <div className="flex flex-col rounded-lg bg-white/40 px-12 pb-4 pt-8 text-xl">
+        <div className="grid gap-6 md:grid-cols-2 mb-5 pb-3">
           <div className="flex flex-col ">
-            <label htmlFor="name" className=" pb-3">
-              Name
-            </label>
+            <label htmlFor="name">Name</label>
             <input
               id="name"
               type="text"
-              className=" rounded-lg w-full "
+              className=" rounded-lg w-full pb-3 "
+              placeholder="What should                                          I call you?"
               required
             ></input>
           </div>
           <div className="flex flex-col ">
-            <label htmlFor="email" className=" pb-3">
-              Email
-            </label>
+            <label htmlFor="email">Email</label>
             <input
               id="email"
               type="email"
+              placeholder="example@domain.com"
               className=" rounded-lg w-full"
               required
             ></input>
           </div>
         </div>
         <div className="flex flex-col mb-5">
-          <label htmlFor="message" className=" pb-3 ">
-            Message
-          </label>
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             rows={4}
@@ -47,9 +42,9 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className="mb-5 w-[150px] bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+          className="mb-5 w-[90px] bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded"
         >
-          Submit
+          Send
         </button>
       </div>
     </form>
