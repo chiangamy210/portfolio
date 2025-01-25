@@ -15,7 +15,7 @@ export default function ContactForm() {
               id="name"
               type="text"
               className=" rounded-lg w-full pb-3 "
-              placeholder="What should                                          I call you?"
+              placeholder="What should I call you?"
               required
             ></input>
           </div>
