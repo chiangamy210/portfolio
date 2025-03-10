@@ -26,7 +26,7 @@ export default function Navbar({
   return (
     <nav>
       <div
-        className={`flex z-30 my-4 p-5 gap-4 justify-between items-center w-[350px] h-[1vh] text-base md:w-[400px] md:text-xl bg-white rounded-full transition-all duration-500 ease-in-out ${
+        className={`flex z-30 my-4 p-5 gap-4 justify-between items-center sm:w-[300px]  h-[1vh] text-base md:w-[400px] md:text-xl bg-white rounded-full transition-all duration-500 ease-in-out ${
           isFixed ? "fixed top-0" : "relative"
         }
           ${isVisible ? "opacity-100" : "opacity-0"}

@@ -35,7 +35,6 @@ export default function Projects() {
       tools: "React, NodeJS, Mui, Gemini, Vercel, Cloudinary",
       description:
         "It's an AI chat platform combined with the function of pdf reading. Deployed on Vercel and the pdf files stored on Cloudinary makes users experience the AI helper on different devices anytime.",
-      instruction: "click to try",
     },
 
     {
@@ -44,7 +43,6 @@ export default function Projects() {
       description:
         " It is a Second-Hand Trading website project. Collaborated with a team using Spring Boot environment and JWT authentication.",
       tools: "React, Java, AntDesign",
-      instruction: "click to watch full demo",
     },
     {
       id: 3,
@@ -58,15 +56,15 @@ export default function Projects() {
 
   return (
     <main className="flex flex-wrap flex-col justify-center items-center">
-      <div className="flex flex-col items-center justify-center gap-y-2 md:px-[10%] xl:px-[20%] ">
+      <div className="flex flex-col  md:items-center justify-center gap-y-2 sm:px-[0%] md:px-[10%] xl:px-[20%] ">
         <div key={projectsDescription[currentSlide].id} className="mb-12">
           <h1 className="flex  justify-center">
             {projectsDescription[currentSlide].title}
           </h1>
-          <p className="flex justify-center text-xl text-gray-500 my-2 mx-16">
+          <p className="flex justify-center text-xl text-gray-500 my-2 ">
             {projectsDescription[currentSlide].description}
           </p>
-          <p className="flex justify-center text-xl text-gray-500 font-semibold">
+          <p className="flex justify-center text-xl text-gray-500 font-semibold ">
             {projectsDescription[currentSlide].tools}
           </p>
         </div>
@@ -76,17 +74,7 @@ export default function Projects() {
           setCurrentSlide={setCurrentSlide}
           className="flex justify-between items-center mb-2 "
         />
-        <p className="text-xl text-gray-400">
-          {projectsDescription[currentSlide].instruction}
-        </p>
       </div>
     </main>
   );
 }
-
-//change ui to more stylish
-//fix ipad problem
-//draw pics
-//choose color
-//carousal problem
-//submit function

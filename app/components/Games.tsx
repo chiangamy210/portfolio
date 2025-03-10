@@ -48,21 +48,18 @@ export default function Games() {
         <p className="text-xl text-gray-500">
           I am self-taught in game development and have created several small
           web games, which allowed me to explore programming logic, user
-          interaction, and design principles.
+          interaction, and design principles. tap the picture to try
         </p>
+        <p className="text-xl text-gray-500">tap the picture to try</p>
         <p className="text-xl text-gray-500 font-semibold">C#, Unity</p>
       </div>
-      <div>
-        <Carousel
-          images={carouselImages}
-          className="flex  justify-around items-center w-[90vw] lg:w-[45vw]  mb-2"
-          setCurrentSlide={setCurrentSlide}
-          currentSlide={currentSlide}
-        />
-        <p className="flex justify-center text-xl text-gray-400 ">
-          click to play
-        </p>
-      </div>
+
+      <Carousel
+        images={carouselImages}
+        className="flex  justify-around items-center w-[90vw] lg:w-[45vw]  mb-2"
+        setCurrentSlide={setCurrentSlide}
+        currentSlide={currentSlide}
+      />
     </main>
   );
 }
