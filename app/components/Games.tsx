@@ -43,23 +43,25 @@ export default function Games() {
 
   return (
     <main className="flex flex-wrap justify-between ">
-      <div className="flex  flex-col items-start justify-center mb-12 gap-y-2 w-full lg:w-[45vw] ">
+      <div className="flex  flex-col items-center justify-center mb-12 gap-y-2 w-full lg:w-[45vw] ">
         <h1>My Unity Adventures</h1>
         <p className="text-xl text-gray-500">
           I am self-taught in game development and have created several small
           web games, which allowed me to explore programming logic, user
-          interaction, and design principles. tap the picture to try
+          interaction, and design principles.
         </p>
-        <p className="text-xl text-gray-500">tap the picture to try</p>
         <p className="text-xl text-gray-500 font-semibold">C#, Unity</p>
       </div>
+      <div className="flex flex-col items-center">
+        <Carousel
+          images={carouselImages}
+          className="flex  justify-around items-center w-[90vw] lg:w-[45vw]  mb-2"
+          setCurrentSlide={setCurrentSlide}
+          currentSlide={currentSlide}
+        />
 
-      <Carousel
-        images={carouselImages}
-        className="flex  justify-around items-center w-[90vw] lg:w-[45vw]  mb-2"
-        setCurrentSlide={setCurrentSlide}
-        currentSlide={currentSlide}
-      />
+        <p className="text-sm text-gray-500">click the picture to play</p>
+      </div>
     </main>
   );
 }

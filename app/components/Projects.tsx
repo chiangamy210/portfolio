@@ -33,6 +33,7 @@ export default function Projects() {
       id: 1,
       title: "Insight Reader",
       tools: "React, NodeJS, Mui, Gemini, Vercel, Cloudinary",
+      instruction: "click picture to try",
       description:
         "It's an AI chat platform combined with the function of pdf reading. Deployed on Vercel and the pdf files stored on Cloudinary makes users experience the AI helper on different devices anytime.",
     },
@@ -43,12 +44,13 @@ export default function Projects() {
       description:
         " It is a Second-Hand Trading website project. Collaborated with a team using Spring Boot environment and JWT authentication.",
       tools: "React, Java, AntDesign",
+      instruction: "click picture to watch full demo",
     },
     {
       id: 3,
       title: "STAYBOOKING",
       tools: "React, JAVA, AntDesign",
-      instruction: "click to watch full demo",
+      instruction: "click picture to watch full demo",
       description:
         "It's a Seamless Stay Rental web project. Designed and developed a dynamic one-page online stay rental application, leveraging React for frontend and Spring Boot for backend services. Integrated PostgreSQL for reservation management, Google Cloud Storage for media, and PostGIS for geo-based searches, ensuring scalability and reliability through deployment on Google Cloud Run.",
     },
@@ -74,6 +76,9 @@ export default function Projects() {
           setCurrentSlide={setCurrentSlide}
           className="flex justify-between items-center mb-2 "
         />
+        <p className="flex justify-center text-sm text-gray-500  ">
+          {projectsDescription[currentSlide].instruction}
+        </p>
       </div>
     </main>
   );

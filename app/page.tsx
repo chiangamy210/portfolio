@@ -70,7 +70,7 @@ export default function Page() {
   };
   return (
     <main
-      className="flex min-h-screen flex-col p-12 text-gray-900 overflow-auto"
+      className="flex min-h-screen flex-col p-5 md:p-12 text-gray-900 overflow-auto"
       style={{ background: `url(/bg.png)`, backgroundSize: "cover" }}
     >
       <Navbar

@@ -46,7 +46,7 @@ export default function Skills() {
         <p className="text-xl text-gray-500">
           I specialize in creating responsive frontends, seamless web
           applications, and robust backend services, leveraging diverse skills
-          and tools that fuel my passion for coding.
+          and tools.
         </p>
       </div>
       <div className="flex flex-wrap  gap-y-10 gap-x-10 w-full  md:w-[45vw] md:order-1">
