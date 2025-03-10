@@ -87,13 +87,13 @@ export default function Page() {
           </section>
           <MeInfo />
         </header>
-        <div className="my-8 ml-6">
+        <div className="my-8 ml-6 relative w-[500px] h-[300px]">
           <Image
             src="/img/evil-rabbit.png"
             alt="Amy portait"
-            width={500}
-            height={300}
-            className="rounded-lg"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 500px"
+            className="rounded-lg  object-contain"
           />
         </div>
       </div>
@@ -107,10 +107,10 @@ export default function Page() {
         <section id="skills" className="my-32">
           <Skills />
         </section>
-        <section id="contact" className="my-32">
-          <Contact />
-        </section>
       </div>
     </main>
   );
 }
+
+//TODO tools add grey bg and change color
+//TODO games sm-[] in the middle

@@ -21,7 +21,6 @@ export default function Navbar({
     { id: "projects", label: "Projects" },
     { id: "games", label: "Games" },
     { id: "skills", label: "Skills" },
-    { id: "contact", label: "Contact" },
   ];
 
   return (
