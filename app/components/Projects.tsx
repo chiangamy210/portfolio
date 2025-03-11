@@ -52,14 +52,17 @@ export default function Projects() {
       tools: "React, JAVA, AntDesign",
       instruction: "click picture to watch full demo",
       description:
-        "It's a Seamless Stay Rental web project. Designed and developed a dynamic one-page online stay rental application, leveraging React for frontend and Spring Boot for backend services. Integrated PostgreSQL for reservation management, Google Cloud Storage for media, and PostGIS for geo-based searches, ensuring scalability and reliability through deployment on Google Cloud Run.",
+        "It's a Stay Rental web project which is designed and developed a dynamic one-page online application, leveraging React for frontend and Spring Boot for backend services. Integrated PostgreSQL for reservation management, Google Cloud Storage for media, and PostGIS for geo-based searches, ensuring scalability and reliability through deployment on Google Cloud Run.",
     },
   ];
 
   return (
     <main className="flex flex-wrap flex-col justify-center items-center">
-      <div className="flex flex-col  md:items-center justify-center gap-y-2 sm:px-[0%] md:px-[10%] xl:px-[20%] ">
-        <div key={projectsDescription[currentSlide].id} className="mb-12">
+      <div className="flex flex-col md:items-center justify-center gap-y-2 sm:px-[0%] md:px-[10%] xl:px-[20%] ">
+        <div
+          key={projectsDescription[currentSlide].id}
+          className="mb-4  h-[25vh] overflow-y-auto"
+        >
           <h1 className="flex  justify-center">
             {projectsDescription[currentSlide].title}
           </h1>
