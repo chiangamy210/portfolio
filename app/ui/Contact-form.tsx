@@ -1,9 +1,7 @@
 "use client";
 
 export default function ContactForm() {
-  function handleSend() {
-    console.log("123");
-  }
+  function handleSend() {}
 
   return (
     <form onSubmit={handleSend}>

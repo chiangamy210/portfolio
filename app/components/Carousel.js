@@ -18,13 +18,11 @@ export default function Carousel({
   return (
     <div className={`flex flex-col relative overflow-hidden ${className}`}>
       <div>
-        {/* Left Arrow */}
         <AiOutlineLeft
           onClick={handlePrevSlide}
           className="absolute left-2 top-1/2 -translate-y-1/2 cursor-pointer text-gray-400 z-20 text-3xl hover:text-gray-700"
         />
 
-        {/* Carousel Wrapper */}
         <div className="relative w-full overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
@@ -47,7 +45,6 @@ export default function Carousel({
           </div>
         </div>
 
-        {/* Right Arrow */}
         <AiOutlineRight
           onClick={handleNextSlide}
           className="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer text-gray-400 z-20 text-3xl hover:text-gray-700"
