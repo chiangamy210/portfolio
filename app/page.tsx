@@ -18,18 +18,12 @@ export default function Page() {
   const [isFixed, setIsFixed] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [activeHash, setActiveHash] = useState("");
-  const [isHelloVisible, setIsHelloVisible] = useState(true);
-  const [isIAmVisible, setIsIAmVisible] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = debounce(() => {
-      if (window.scrollY > 100) {
-        setIsHelloVisible(false);
-        setIsIAmVisible(true);
-      } else {
-        setIsHelloVisible(true);
-        setIsIAmVisible(false);
-      }
+      setScrollY(window.scrollY);
+
       if (window.scrollY > 500) {
         setIsFixed(true);
         setIsVisible(true);
@@ -85,16 +79,13 @@ export default function Page() {
         isVisible={isVisible}
         isFixed={isFixed}
       />
-      <div className="flex justify-around  text-8xl ">
-        <header id="about" className="flex flex-col justify-center items-start">
-          <h1>I'm Amy</h1>
-          <section className="my-8 text-3xl">
-            Software Development Engineer
-          </section>
-          <About isHelloVisible={isHelloVisible} isIAmVisible={isIAmVisible} />
-          <MeInfo />
-        </header>
-      </div>
+
+      <header
+        id="about"
+        className="flex flex-col justify-center items-center text-6xl mt-[30vh]"
+      >
+        <About locationY={scrollY} />
+      </header>
       <div className="flex flex-col my-32  text-gray-700 text-4xl">
         <section id="projects" className="my-32">
           <Projects />

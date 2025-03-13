@@ -1,23 +1,36 @@
-export default function About({ isHelloVisible, isIAmVisible }: AboutProps) {
+import MeInfo from "./MeInfo";
+
+export default function About({ locationY }: { locationY: number }) {
   return (
-    <>
+    <div className="flex flex-col jusitfy-center items-center gap-y-[2vh]">
       <div
-        className={`text-blue-500 transition-all duration-500 ease-in-out ${
-          isHelloVisible ? "opacity-100" : "opacity-0"
+        className={`transition-all duration-500 ease-in-out ${
+          locationY <= 100 ? "opacity-100" : "opacity-40"
         }`}
       >
         Hello
       </div>
       <div
-        className={`text-blue-500 transition-all duration-500 ease-in-out ${
-          isHelloVisible ? "opacity-0" : "opacity-100"
+        className={`transition-all duration-500 ease-in-out ${
+          locationY >= 100 && locationY < 200 ? "opacity-100" : "opacity-40"
         }`}
       >
-        I AM
+        I'm Amy
       </div>
-      <div className={`text-blue-500 transition-all duration-500 ease-in-out `}>
-        {isHelloVisible ? "Amy" : "Alan"}
+      <div
+        className={`transition-all duration-500 ease-in-out text-3xl ${
+          locationY >= 200 && locationY < 300 ? "opacity-100" : "opacity-40"
+        }`}
+      >
+        Software Development Enginear
       </div>
-    </>
+      <div
+        className={`text-blue-500 transition-all duration-500 ease-in-out text-3xl ${
+          locationY >= 300 ? "opacity-100" : "opacity-40"
+        }`}
+      >
+        <MeInfo />
+      </div>
+    </div>
   );
 }
