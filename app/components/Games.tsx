@@ -45,7 +45,7 @@ export default function Games() {
     <main className="flex flex-wrap justify-between ">
       <div className="flex  flex-col items-center justify-center mb-12 gap-y-2 w-full lg:w-[45vw] ">
         <h1>My Unity Adventures</h1>
-        <p className="text-xl text-gray-500">
+        <p className="text-base text-gray-500">
           I am self-taught in game development and have created several small
           web games, which allowed me to explore programming logic, user
           interaction, and design principles.

@@ -46,7 +46,7 @@ export default function Page() {
           window.history.pushState(null, "", `#${section.id}`);
         }
       }
-    }, 100);
+    }, 50);
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -63,6 +63,7 @@ export default function Page() {
         behavior: "smooth",
         block: "center",
       });
+
       setActiveHash(`#${id}`);
       window.history.pushState(null, "", `#${id}`);
     }
