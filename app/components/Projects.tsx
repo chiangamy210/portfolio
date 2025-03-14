@@ -61,7 +61,7 @@ export default function Projects() {
       <div className="flex flex-col md:items-center justify-center gap-y-2 sm:px-[0%] md:px-[10%] xl:px-[20%] ">
         <div
           key={projectsDescription[currentSlide].id}
-          className="mb-4  h-[35vh] overflow-y-auto"
+          className="mb-4  h-[45vh] sm:h-[30vh] md:h-[30vh] lg:h-[25vh] overflow-y-auto"
         >
           <h1 className="flex  justify-center">
             {projectsDescription[currentSlide].title}
