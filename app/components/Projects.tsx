@@ -9,6 +9,12 @@ export default function Projects() {
   const carouselProject = [
     {
       id: 1,
+      src: "/projects/aura/aura.gif",
+      alt: "aura gif demo",
+      link: "https://aura-your-gentle-guide.vercel.app/",
+    },
+    {
+      id: 1,
       src: "/projects/insightReader/insightReader.gif",
       alt: "Insight Reader gif demo",
       link: "https://insight-reader-client.vercel.app/",
@@ -31,6 +37,14 @@ export default function Projects() {
   const projectsDescription = [
     {
       id: 1,
+      title: "Aura",
+      tools: "React, vite, Gemini, Vercel",
+      instruction: "click picture to try",
+      description:
+        "Feeling confused or upset? Let's draw a card! Aura provides insightful quotes and AI-powered explanations to help you find clarity and guidance when you need it most.",
+    },
+    {
+      id: 2,
       title: "Insight Reader",
       tools: "React, NodeJS, Mui, Gemini, Vercel, Cloudinary",
       instruction: "click picture to try",
@@ -39,7 +53,7 @@ export default function Projects() {
     },
 
     {
-      id: 2,
+      id: 3,
       title: "SWAP SPOT",
       description:
         " It is a Second-Hand Trading website project. Collaborated with a team using Spring Boot environment and JWT authentication.",
@@ -47,7 +61,7 @@ export default function Projects() {
       instruction: "click picture to watch full demo",
     },
     {
-      id: 3,
+      id: 4,
       title: "STAYBOOKING",
       tools: "React, JAVA, AntDesign",
       instruction: "click picture to watch full demo",
