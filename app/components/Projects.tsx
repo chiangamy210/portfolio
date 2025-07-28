@@ -14,20 +14,20 @@ export default function Projects() {
       link: "https://aura-your-gentle-guide.vercel.app/",
     },
     {
-      id: 1,
+      id: 2,
       src: "/projects/insightReader/insightReader.gif",
       alt: "Insight Reader gif demo",
       link: "https://insight-reader-client.vercel.app/",
     },
 
     {
-      id: 2,
+      id: 3,
       src: "/projects/swapspot/swapspot.gif",
       alt: "swap spot gif demo",
       link: "https://youtu.be/a9vSveHpN0o",
     },
     {
-      id: 3,
+      id: 4,
       src: "/projects/staybooking/staybooking.gif",
       alt: "staybooking gif demo",
       link: "https://youtu.be/PgOib85Mgg4",
